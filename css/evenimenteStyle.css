@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito&display=swap");
+
+* {
+  font-family: "Nunito", sans-serif;
+}
+
+body {
+  background: #fff;
+  color: #555555;
+  font-size: 14px;
+}
+
+	.banner{
+	position:relative;
+	height: 550px;
+	overflow:hidden;
+	background: url(../imagini/evenimente/banner.jpg) no-repeat center;
+	background-size: cover;
+	object-fit: cover;
+}
+
+.page-title{
+	top: 230px;
+	position:absolute;
+	left:0;
+	right:0;
+	align-items:center;
+	text-align:center;
+	font-size: 350%;
+	color: white;
+
+}
+a{
+  text-decoration: none;
+  color: #555555;
+}
+
+.new-products{
+	margin: 20px;
+}
+
+.card_top img {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 100%;
+}
+
+.wrapper {
+  width: 80%;
+  margin: 20px auto;
+}
+
+.cards_wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cards_wrap .card_item {
+  width: 33.33%;
+  padding: 20px;
+}
+
+.cards_wrap .card_inner {
+  background: #ffffff;
+}
+
+.cards_wrap .card_top {
+  width: 100%;
+  /*min-height: 225px;*/
+  padding: 10px;
+  padding-bottom: 0;
+}
+
+.cards_wrap .card_bottom {
+  padding: 25px;
+}
+
+.cards_wrap .card_bottom .card_category {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.cards_wrap .card_bottom .card_info {
+  padding: 15px;
+  margin: 10px 0;
+ /* border: 1px dashed #0071bc;*/
+}
+
+.cards_wrap .card_bottom .card_info .price {
+  color: #0071bc;
+  font-size: 18px;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.cards_wrap .card_bottom .card_creator {
+  text-align: center;
+}
+
+
+  .cards_wrap .card_item {
+    width: 33.33%;
+  }
+
+  .text p{
+      width: 80%;
+      text-align: justify;
+      margin: 40px auto;
+      font-size: 20px;
+      text-indent: 50px;
+  }
+
+
+/********** Medium devices only **********/
+@media (min-width: 600px) and (max-width: 768px) {
+  .cards_wrap .card_item {
+    width: 50%;
+  }
+
+    .cards_wrap .card_top {
+    height: auto;
+  }
+
+  .item3{
+    transform: translate(50%);
+  }
+
+  .banner{height: 400px;}
+  .page-title{
+  	top: 200px;
+  	position:absolute;
+  	left:0;
+  	right:0;
+  	align-items:center;
+  	text-align:center;
+  	font-size: 235%;
+  	color: white;
+
+  }
+
+}
+
+/********** Small devices only **********/
+@media(max-width: 599px){
+  .cards_wrap .card_top {
+    height: auto;
+  }
+  .cards_wrap .card_item {
+    width: 100%;
+  }
+
+  .banner{height: 300px;}
+  .page-title{
+    top: 150px;
+    position:absolute;
+    left:0;
+    right:0;
+    align-items:center;
+    text-align:center;
+    font-size: 220%;
+    color: white;
+
+  }
+
+}

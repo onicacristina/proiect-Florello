@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+}
+
+body {
+  background: #fff;
+  color: #555555;
+  font-size: 14px;
+}
+
+	.banner{
+	position:relative;
+	height: 550px;
+	overflow:hidden;
+	background: url(../imagini/florarie/echipa/banner.jpg) no-repeat center;
+	background-size: cover;
+	object-fit: cover;
+}
+
+.page-title{
+	top: 230px;
+	position:absolute;
+	left:0;
+	right:0;
+	align-items:center;
+	text-align:center;
+	font-size: 350%;
+	color: white;
+
+}
+
+.image{
+    width: 100%;
+    object-fit: cover;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 400px;
+    /*transform: translate(10%);*/
+    clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
+}
+
+.text p{
+    width: 80%;
+    text-align: justify;
+    margin: 40px auto;
+    font-size: 20px;
+    text-indent: 50px;
+		line-height: 1.7;
+		color: #555555;
+}
+
+
+/*--2col--*/
+
+/* title */
+.title{
+    padding: 0.2rem;
+}
+.title h4{
+    text-transform: uppercase;
+    color: var(--grey);
+    font-size: 0.8rem;
+    text-align: center;
+}
+.title h2{
+    opacity: 0.9;
+    text-transform: capitalize;
+    font-size: 1.7rem;
+    text-align: center;
+}
+
+/* about */
+.about{
+    overflow-x: hidden;
+}
+
+button{
+    font-family: inherit;
+    outline: none;
+}
+h1, h2, h3, h4, h5, h6, p{
+    margin: 1.2rem 0;
+}
+
+.para-text{
+    color: var(--dark);
+    line-height: 1.7;
+    font-size: 0.95rem;
+    opacity: 0.8;
+}
+
+.about{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 3rem;
+        align-items: center;
+    }
+
+	.about{width: 85vw;
+	margin: 50px auto;
+}
+
+/********** Medium devices only **********/
+@media (min-width: 600px) and (max-width: 768px) {
+	.about{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 3rem;
+        align-items: center;
+    }
+
+  #first{ order: 1;}
+  #second{ order: 2;}
+  #third{ order: 4;}
+  #fourth{ order: 3;}
+  #fifth{ order: 5;}
+  #sixth{ order: 6;}
+  #seventh{order: 8;}
+  #eighth{order: 7;}
+
+
+	.about{width: 85vw;
+	margin: 50px auto;}
+
+  .banner{height: 400px;}
+  .page-title{
+  	top: 200px;
+  	position:absolute;
+  	left:0;
+  	right:0;
+  	align-items:center;
+  	text-align:center;
+  	font-size: 235%;
+  	color: white;
+
+  }
+
+}
+
+/********** Small devices only **********/
+@media(max-width: 599px){
+.about{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 3rem;
+        align-items: center;
+    }
+
+    #first{ order: 1;}
+    #second{ order: 2;}
+    #third{ order: 4;}
+    #fourth{ order: 3;}
+    #fifth{ order: 5;}
+    #sixth{ order: 6;}
+    #seventh{order: 8;}
+    #eighth{order: 7;}
+
+    .banner{height: 300px;}
+  	.page-title{
+    	top: 150px;
+    	position:absolute;
+    	left:0;
+    	right:0;
+    	align-items:center;
+    	text-align:center;
+    	font-size: 220%;
+    	color: white;
+
+    }
+}
